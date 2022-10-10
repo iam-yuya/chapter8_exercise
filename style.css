@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #6c6b6b;
+}
+
+.list-box {
+  width: 960px;
+  margin: 50px auto;
+}
+
+.list-text {
+  padding: 20px 0 20px 20px;
+}
+
+.list-text:nth-child(odd) {
+  background-color: #f7f7f7;
+}
+
+.boxes {
+  width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto 50px;
+}
+
+.common {
+  width: 30%;
+  height: 200px;
+  margin: 0 5% 40px 0;
+  background-color: yellow;
+}
+
+.box1,
+.box5,
+.box9 {
+  background-color: orange;
+}
+      /*↓でもOK!*/
+/*.common:first-child,
+  .common:nth-child(5),
+  .common:last-child {
+  　background-color: #ff8c00;
+}*/
+
+
+.box3,
+.box6 {
+  margin: 0 0 40px 0;
+}
+
+.box7,
+.box8 {
+  margin: 0 5% 0 0;
+}
+
+
+.box9 {
+  margin: 0;
+}
+
+
+
+/*重要‼*/
+/*:nth-child(3n) → 3の倍数にcss適用*/
+
+/*:nth-last-child(-n + 3) →box6,box3にcss適用*/
